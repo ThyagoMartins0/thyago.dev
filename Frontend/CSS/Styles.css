@@ -1,6 +1,7 @@
-body{
-  background: #0A0A0A; 
+body {
+  background: #0a0a0a;
 }
+/* -----------BODY-------------*/
 * {
   padding: 0;
   margin: 0;
@@ -9,92 +10,80 @@ body{
   list-style: none;
   scroll-behavior: smooth;
 }
-.navbar{
-  background: #1B1B1B;;
+/*----------NAVBAR------------*/
+.navbar {
+  background: #1b1b1b;
   font-family: IBM Plex Mono;
-  font-size: 0.100rem;
+  font-size: 0.1rem;
   line-height: normal;
   gap: 4.375rem;
-  }
-.Home{
-    background: #080808; 
-    height: 85vh;
-    margin-bottom: 50px;
 }
-.Projects{
-  background: #B8D9D7; 
-    height: 85vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    gap: 2.5rem;
+/*----------HOME------------*/
+.Home {
+  background: #080808;
+  height: 85vh;
+  margin-bottom: 50px;
 
-    margin-top: 5rem;
-    height: 100vh;
-  }
-
-
-.Projects .box{
-   background: #2a2a2a;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.50);
-  text-align: center;
-  transition: all .45s ease;
-}
-
-.small-image {
-  width: 450px;  /* ou qualquer valor que você deseja */
-  height: 450px; /* ou qualquer valor que você deseja */
-}
-
-
-.about{
-  background-color: #B8D9D7;
-}
-
-
-
-
-
-/* CENTRO */
-
-
-.row h1{
+  .row h1 {
     color: aliceblue;
     font-family: IBM Plex Mono;
     margin: 45px;
-    text-align:center;
+    text-align: center;
     align-self: Justify;
-}
+  }
 
-.row h3{
-    color: #9C9C9C;
+  .row h3 {
+    color: #9c9c9c;
     font-family: IBM Plex Mono;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 300;
     line-height: 1.5rem; /* 171.429% */
     letter-spacing: 0.14px;
-}
+  }
 
-
-.col .btn {
+  .col .btn {
     display: flex;
     padding: 1.313rem 4rem;
     align-items: Justify;
     gap: 0.625rem;
-    border-radius: 0.30rem;
-    
-    border: 1px solid #B8D9D7;
-    background: #9cdad6;
-    box-shadow: 0px 8px 30px 0px rgba(184, 217, 215, 0.50);
+    border-radius: 0.3rem;
 
-    color: #FFF;
+    border: 1px solid #b8d9d7;
+    background: #9cdad6;
+    box-shadow: 0px 8px 30px 0px rgba(184, 217, 215, 0.5);
+
+    color: #fff;
     font-family: IBM Plex Mono;
-    font-size: 1rem;  
+    font-size: 1rem;
+  }
+}
+/*----------Projects------------*/
+.Projects {
+  background: #b8d9d7;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2.5rem;
+
+  margin-top: 5rem;
+  height: 100vh;
 }
 
+.Projects .box {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 0.45s ease;
+}
+
+/*----------ABOUT------------*/
+.about {
+  background-color: #b8d9d7;
+}
 .about .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -108,70 +97,7 @@ body{
   margin-left: 10px;
 }
 
-.Skills .main-text p {
-  font-size: 2em; /* Ajuste o tamanho conforme necessário */
-  font-weight: bold; /* Faz o texto em negrito */
-  
-}
-
-.skill span {
-  color: #4e4e4e;
-}
-
-.skill .progress {
-  background-color: #cde1f8;
-  margin: 0.5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: 0.7rem;
-}
-
-.skill .progress .progress-bar {
-  height: 0.7rem;
-  background-color: #0078ff;
-}
- 
-.main-text  p{
-  color:white ;
-}
-.main-text  h2{
-  color:#B8D9D7 ;
-}
-
-.main-text02{
-  background-color: #B8D9D7;
-  padding: 2rem;
-  text-align: center;
-  transition: all .45s ease;
-
-}
-.main-text02 H2{
-  color:black
-}
-
-.main-text02 {
-  text-align: center; /* Centraliza o texto */
-}
-
-.main-text02 p {
-  font-size: 2em; /* Ajuste o tamanho conforme necessário */
-  font-weight: bold; /* Faz o texto em negrito */
-}
-
-.main-text02 h2 {
-  font-size: 2.5em; /* Ajuste o tamanho conforme necessário */
-}
-
-/* FIM DO  CENTRO */
-
-
-/* FOOTER */
-.btn-outline-light{
-    width: 10rem;
-    height: 3.75rem;
-    flex-shrink: 0;
-    border-radius: 1rem;
-    border: 1px solid #0A0A0A;
-}
+/*----------SKILLS------------*/
 
 .Skills {
   display: grid;
@@ -182,57 +108,53 @@ body{
   height: 100vh;
   padding: 5.625rem;
 }
-.s-icons{
+.s-icons {
   color: white;
 }
-.Skills .box{
+.Skills .box {
   background: #2a2a2a;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.5);
 }
-.box{
+.box {
   text-align: center;
-  transition: all .45s ease;
+  transition: all 0.45s ease;
 }
-.card{
+.card {
   background: #2a2a2a;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.5);
 }
-.card-text h3{
+.card-text h3 {
   color: white;
-
 }
-.s-icons i{
+.s-icons i {
   font-size: 36px;
 }
 
-.box h3{
+.box h3 {
   font-size: 22px;
   font-weight: 600;
-  color:white
+  color: white;
 }
 
-.box:hover{
+.box:hover {
   transform: translateY(-8px);
 }
 
-
-.main-text{
+.main-text {
   text-align: center;
 }
 
-
-.about p{
-  text-align: justify
-}
-
-
-.carousel-item img {
-  
-  width: auto;
+/* FOOTER */
+.btn-outline-light {
+  width: 10rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  border: 1px solid #0a0a0a;
 }
 
 @media (max-width: 768px) {
@@ -249,5 +171,3 @@ body{
     padding-left: 0rem;
   }
 }
-
-
