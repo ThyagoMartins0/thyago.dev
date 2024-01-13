@@ -97,6 +97,7 @@ body{
 .about{
   background-color: #b8d9d7;
   height: 100vh; 
+  font-family: IBM Plex Mono;
 }
 .about .box-shadow-full {
   padding-top: 4rem;
@@ -105,6 +106,9 @@ body{
 /*----------ABOUT------------*/
 .skills{
   height: 150vh;
+  overflow: hidden;
+  padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
+  font-family: IBM Plex Mono;
 }
 .main-title {
   text-align: center;
@@ -134,6 +138,9 @@ body{
   gap: 2.5rem;
   margin-top: 5rem;
   padding: 5.625rem;
+  flex-wrap: wrap;
+  margin: -10px; /* Compensa a margem negativa dos filhos */
+  
 }
 .s-icons {
   color: white;
@@ -147,6 +154,10 @@ body{
 .box {
   text-align: center;
   transition: all 0.45s ease;
+  flex: 0 0 calc(33.333% - 20px);
+ 
+  box-sizing: border-box; /* Garante que a largura e altura incluam bordas e preenchimentos */
+
 }
 .card {
   background: #2a2a2a;
@@ -170,6 +181,7 @@ body{
 .box:hover {
   transform: translateY(-8px);
 }
+
 /*----------SKILLS------------*/
 .projects{
   height: 100vh;
@@ -212,11 +224,30 @@ body{
     font-size: 0.9rem; /* Ajuste o tamanho da fonte conforme necessário */
   }
 }
+/*----------HOME------------*/
+.about{
+  height: fit-content;
+}
 
+/*--------ABOUT-------------*/
 
+.skills{
+  height: fit-content;
+  overflow: hidden;
+  padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
+
+}
 
 /* Media query para telas com no máximo 780px */
 @media only screen and (max-width: 780px) {
+ 
+
+.skills{
+  height: fit-content;
+  overflow: hidden;
+  padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
+
+}
   .Home {
     padding: 15px; /* Ajuste o espaçamento interno para telas ainda menores */
     margin-bottom: 20px; /* Ajuste a margem inferior */
@@ -237,23 +268,60 @@ body{
     padding: 8px 12px; /* Reduza o espaçamento interno ainda mais */
     font-size: 0.8rem; /* Ajuste o tamanho da fonte */
   }
+  
+
+  .about .col-md-6,
+  .about-info,
+  .about-me {
+    margin-bottom: 15px;
+  
+}
+.box {
+  flex: 0 0 calc(50% - 20px);
 }
 
-@media only screen and (max-width: 500px) {
+/*----------HOME------------*/
+
+.about{
+  height: fit-content;
+}
+/*----------ABOUT------------*/
+
+/*----------SKILLS------------*/
+
+
+}
+
+
+@media only screen and (max-width: 580px) {
+ 
+  .skills{
+    height: fit-content;
+    overflow: hidden;
+    padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
+  
+  }
+  section {
+    display: flex;
+    flex-direction: column; /* Ou use grid, dependendo do layout desejado */
+  }
+  
   .Home {
     padding: 10px; /* Ajuste o espaçamento interno para telas ainda menores */
     margin-bottom: 15px; /* Ajuste a margem inferior */
   }
-
-  .row h1 {
-    margin: 10px; /* Ajuste a margem */
-    
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .row h3 {
-    font-size: 0.6rem; /* Reduza ainda mais o tamanho da fonte */
-    line-height: 0.9rem; /* Ajuste a linha conforme necessário */
+  .row h1,
+  .row h3,
+  #botoesContainer {
+    margin: 10px 0;
   }
+
 
   #btnPrincipal, .botaoSecundario {
     padding: 6px 10px; /* Reduza o espaçamento interno ainda mais */
@@ -265,7 +333,22 @@ body{
     border: 2px solid #9cdad6;
     display: none;
     /* Outros estilos desejados para telas menores */
+    /*----------HOME------------*/
+  }
+  .about-img {
+    display: none; /* Oculta a foto */
+  }
+
+  .about .col-md-6,
+  .about-info,
+  .about-me {
+    margin-bottom: 15px;
   }
 }
+/*----------about------------*/
+@media only screen and (max-width: 400px) {
+
+}
+
 /*-----------MEDIA QUERIES-------------*/
 
