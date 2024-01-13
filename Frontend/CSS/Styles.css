@@ -93,13 +93,10 @@ body{
   box-shadow: 0px 8px 30px 0px rgba(184, 217, 215, 0.5);
 
 }
-
-
 /*----------HOME------------*/
 .about{
   background-color: #b8d9d7;
-  height: 100vh;
-  
+  height: 100vh; 
 }
 .about .box-shadow-full {
   padding-top: 4rem;
@@ -107,7 +104,7 @@ body{
 }
 /*----------ABOUT------------*/
 .skills{
-  height: 100vh;
+  height: 150vh;
 }
 .main-title {
   text-align: center;
@@ -174,10 +171,101 @@ body{
   transform: translateY(-8px);
 }
 /*----------SKILLS------------*/
-.Projects{
-
+.projects{
+  height: 100vh;
+  background-color: #b8d9d7;
 }
 /*----------PROJECTS------------*/
-.Recommendations{
-
+.recommendations{
+  height: 100vh;
+  background-color: #080808;
 }
+
+/*----------RECOMMENDATIONS------------*/
+/* ... Outros estilos ... */
+
+/* Media query para telas com no máximo 1100px */
+@media only screen and (max-width: 1100px) {
+  .Home {
+    height: auto; /* Ajuste a altura conforme necessário para telas menores */
+    padding: 20px; /* Adicione algum espaço interno para melhor legibilidade */
+    margin-bottom: 30px; /* Ajuste a margem inferior conforme necessário */
+  }
+
+  .row h1 {
+    margin: 20px; /* Ajuste a margem conforme necessário para telas menores */
+  }
+
+  .row h3 {
+    font-size: 0.75rem; /* Reduza o tamanho da fonte para telas menores */
+    line-height: 1.2rem; /* Ajuste a linha conforme necessário */
+  }
+
+  #botoesContainer {
+    /* Adapte os estilos para o contêiner de botões conforme necessário para telas menores */
+    flex-direction: column; /* Mude para coluna para empilhar os botões verticalmente */
+  }
+
+  #btnPrincipal, .botaoSecundario {
+    /* Ajuste os estilos dos botões conforme necessário para telas menores */
+    padding: 10px 15px; /* Reduza o espaçamento interno para telas menores */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+}
+
+
+
+/* Media query para telas com no máximo 780px */
+@media only screen and (max-width: 780px) {
+  .Home {
+    padding: 15px; /* Ajuste o espaçamento interno para telas ainda menores */
+    margin-bottom: 20px; /* Ajuste a margem inferior */
+  }
+
+  .row h1 {
+    margin: 15px; /* Ajuste a margem */
+    text-align: center;
+  }
+
+  .row h3 {
+    font-size: 0.7rem; /* Reduza ainda mais o tamanho da fonte */
+    line-height: 1rem; /* Ajuste a linha conforme necessário */
+    text-align: center;
+  }
+
+  #btnPrincipal, .botaoSecundario {
+    padding: 8px 12px; /* Reduza o espaçamento interno ainda mais */
+    font-size: 0.8rem; /* Ajuste o tamanho da fonte */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Home {
+    padding: 10px; /* Ajuste o espaçamento interno para telas ainda menores */
+    margin-bottom: 15px; /* Ajuste a margem inferior */
+  }
+
+  .row h1 {
+    margin: 10px; /* Ajuste a margem */
+    
+  }
+
+  .row h3 {
+    font-size: 0.6rem; /* Reduza ainda mais o tamanho da fonte */
+    line-height: 0.9rem; /* Ajuste a linha conforme necessário */
+  }
+
+  #btnPrincipal, .botaoSecundario {
+    padding: 6px 10px; /* Reduza o espaçamento interno ainda mais */
+    font-size: 0.7rem; /* Ajuste o tamanho da fonte */
+  }
+  .small-image {
+    
+    height: auto;
+    border: 2px solid #9cdad6;
+    display: none;
+    /* Outros estilos desejados para telas menores */
+  }
+}
+/*-----------MEDIA QUERIES-------------*/
+
