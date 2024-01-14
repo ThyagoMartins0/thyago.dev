@@ -5,6 +5,7 @@
 }
 body{
   background-color:  #080808;
+  
 }
 
 /* -----------BODY-------------*/
@@ -20,7 +21,7 @@ body{
 /*----------NAVBAR------------*/
 .Home{
   background: #080808;
-  height: 78vh;
+  height: 75vh;
   margin-bottom: 50px;
   
 
@@ -96,7 +97,7 @@ body{
 /*----------HOME------------*/
 .about{
   background-color: #b8d9d7;
-  height: 100vh; 
+  height: 93vh; 
   font-family: IBM Plex Mono;
 }
 .about .box-shadow-full {
@@ -114,18 +115,15 @@ body{
   text-align: center;
   margin-bottom: 2.5rem;
   color: #fff;
-}
-
-.main-title{
   text-align: center;
 }
 
-.main-title p{
-  color:blue;
-  font-size: 15px;
-  margin-bottom: 15px;
+.main-title h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #08adad;
+  text-align: center;
 }
-
 .main-title h2{
   font-size: var(--h2-font);
   line-height: 1;
@@ -189,6 +187,7 @@ body{
   overflow: hidden;
   padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
   font-family: IBM Plex Mono;
+  
 }
 .projects-content{
     display: grid;
@@ -329,7 +328,7 @@ body{
   }
 }
 /*----------HOME------------*/
-.about{
+.about .title-left{
   height: fit-content;
 }
 
