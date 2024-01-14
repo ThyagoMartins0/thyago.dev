@@ -10,3 +10,6 @@ function mostrarBotoes() {
       botoesContainer.style.display = 'none';
   }
 }
+window.onload = () => {
+  topo.classList.toggle ("hide-top");
+}
