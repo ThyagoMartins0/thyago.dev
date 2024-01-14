@@ -184,8 +184,11 @@ body{
 
 /*----------SKILLS------------*/
 .projects{
-  height: 100vh;
+  height: 150vh;
   background-color: #b8d9d7;
+  overflow: hidden;
+  padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
+  font-family: IBM Plex Mono;
 }
 .projects-content{
     display: grid;
@@ -193,10 +196,15 @@ body{
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
+    padding: 5.625rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 
 }
 
 .projects-content .row{
+  
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -395,7 +403,7 @@ body{
     height: fit-content;
     overflow: hidden;
     padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
-  
+    align-items: center;
   }
   section {
     display: flex;
@@ -440,6 +448,9 @@ body{
   .about-me {
     margin-bottom: 15px;
   }
+}
+.projects{
+  height: fit-content;
 }
 /*----------about------------*/
 @media only screen and (max-width: 400px) {
