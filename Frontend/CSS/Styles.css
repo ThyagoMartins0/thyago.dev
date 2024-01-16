@@ -203,6 +203,8 @@ body{
   overflow: hidden;
   padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
   font-family: IBM Plex Mono;
+  list-style: none;
+ 
   
 }
 .projects-content{
@@ -214,7 +216,7 @@ body{
     padding: 5.625rem;
     margin-left: 20px;
     margin-right: 20px;
-    
+   
 
 }
 
@@ -222,8 +224,9 @@ body{
   
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
+  
 }
 .projects-content img{
   max-width: 350px;
@@ -252,6 +255,7 @@ body{
   text-align: center;
   padding: 0 40px;
   transition: height 0.5s;
+  
 }
 
 .layer h5{
@@ -263,6 +267,7 @@ body{
 .layer p{
   color: white;
   line-height: 1.8;
+  text-decoration:none
 }
 
 .layer i{
@@ -304,12 +309,73 @@ body{
 }
 
 
-/*----------PROJECTS------------*/
-.recommendations{
-  height: 100vh;
-  background-color: #080808;
+.check-01{
+  text-decoration: none;
 }
 
+/*----------PROJECTS------------*/
+.carreira{
+  height: 100vh;
+  background-color: #080808;
+
+}
+
+.timeline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.container:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.carreira-content img{
+  
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: 32px;
+  margin: 2rem;
+}
+
+.text-box{
+  padding: 20px 20px;
+  background:#b8d9d7;
+  border-radius: 10px;
+  color: var(--text-color);
+  width: 60vw;
+  text-align: justify;
+
+}
+
+.text-box h5{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-box small{
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.text-box p{
+  letter-spacing: 1px;
+  line-height: 1.8;
+  font-size: var(--p-font);
+  margin: 1rem 0;
+}
 
 /*----------RECOMMENDATIONS------------*/
 .footer{
