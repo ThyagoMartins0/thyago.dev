@@ -31,6 +31,7 @@ body{
   color: aliceblue;
   font-family: IBM Plex Mono;
   margin: 45px;
+  margin-top: 6.25rem;
   text-align: center;
   align-self: Justify;
 }
@@ -104,6 +105,10 @@ body{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.about-img {
+  width: 31.25rem   ;
+}
+
 /*----------ABOUT------------*/
 .skills{
   height: 150vh;
@@ -470,9 +475,7 @@ body{
   display: none;
 }
 
-#top.show-top{
-  display: block;
-}
+  
 
 #top i{
   padding: 10px;
