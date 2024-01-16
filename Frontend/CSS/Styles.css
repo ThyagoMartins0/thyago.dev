@@ -10,13 +10,24 @@ body{
 
 /* -----------BODY-------------*/
 .navbar{
-  
+  text-align: center;
   background: #1b1b1b;
   font-family: IBM Plex Mono;
-  font-size: 0.1rem;
-  line-height: normal;
-  gap: 4.375rem;
+  
+  
+  
+}
 
+.navbar .s-icons{
+  color: #9cdad6;
+  font-size: 1.5rem;
+  margin-right:3.125rem ;
+  
+} 
+
+.navbar .sociais{
+  color: #9cdad6;
+  font-size: 1.5rem;
 }
 /*----------NAVBAR------------*/
 .Home{
@@ -250,8 +261,7 @@ body{
 }
 
 .layer p{
-  color: var(--second-color);
-  font-size: var(--p-small-font);
+  color: white;
   line-height: 1.8;
 }
 
@@ -302,6 +312,11 @@ body{
 
 
 /*----------RECOMMENDATIONS------------*/
+.footer{
+  color: #9cdad6;
+}
+
+/*-----------Footer-------------*/
 /* ... Outros estilos ... */
 
 /* Media query para telas com no máximo 1100px */

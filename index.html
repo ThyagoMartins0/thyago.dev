@@ -37,30 +37,36 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom p-sm-2 " id="">
-    <a class="navbar-brand " href="#">Thyago.dev</a>
+   <a> <a class="navbar-brand " href="#">Thyago.dev</a></a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-      <ul class="navbar-nav ms-auto"> <!-- Utilize ms-auto aqui para alinhar à esquerda -->
-        <li class="nav-item">
-          <h5><a class="nav-link active m-3" aria-current="page" href="#">Home</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link active m-3" aria-current="page" href="#about"> About</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link active m-3" aria-current="page" href="#skills"> Skills</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link active m-3" aria-current="page" href="#projects"> Projetos</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link active m-3" aria-current="page" href="#recommendation"> Recomendações</a></h5>
-        </li>
-      </ul>
+
+      <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto"> 
+              <li class="nav-item">
+                  <h5><a class="nav-link active m-3" aria-current="page" href="#">Home</a></h5>
+              </li>
+              <li class="nav-item">
+                  <h5><a class="nav-link active m-3" aria-current="page" href="#about"> About</a></h5>
+              </li>
+              <li class="nav-item">
+                  <h5><a class="nav-link active m-3" aria-current="page" href="#skills"> Skills</a></h5>
+              </li>
+              <li class="nav-item">
+                  <h5><a class="nav-link active m-3" aria-current="page" href="#projects"> Projetos</a></h5>
+              </li>
+              <li class="nav-item">
+                  <h5><a class="nav-link active m-3" aria-current="page" href="#recommendation"> Recomendações</a></h5>
+              </li>
+          </ul>
+          <div class="s-icons">
+            <a class="sociais" target="_blank" aria-label="icone-social" href="https://github.com/oficialthyago"><i class='bx bxl-github'></i></a>
+            <a class="sociais" target="_blank" aria-label="icone-social" href="https://www.linkedin.com/in/thyago-ramos/"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+      </div>
+  
     </div>
-    
    
 </nav>
   <section class="Home" id="Home">
@@ -68,11 +74,10 @@
        <div class="row">
         <div class="col order-first mt-5">
           <div>
-            <h1>Thyago Martins   developer.</h1>
+            <h1>Thyago Martins developer.</h1>
             <h3><p> < Hello world! come as you are!/ ><br>
             22 years old, brazilian <br>Computer engineer </p></h3>
-           
-            
+
           </div>
         </div>
         <div class="col order-last">
@@ -99,15 +104,7 @@
                     <div class="about-img">
                       <img src="./Frontend/./Image/photo_home.jpeg" class="img-fluid rounded b-shadow-a" alt="">
                     </div>
-                    <!--
-                    <button id="btnPrincipal" onclick="mostrarBotoes()">Comece aqui </button>
-                    <div id="botoesContainer">
-                        <button class="botaoSecundario">CV Java</button>
-                        <button class="botaoSecundario">CV Node</button>
-                        <button class="botaoSecundario">CV PHP</button>
-                        <script src="index.js"></script> 
-                      </div>
-                    --> 
+                
                   </div>
                  
                 </div>
@@ -140,8 +137,8 @@
   
   <section class="skills" id="skills">
       <div class="main-title">
-        <h2><p>What I am Good In</p></h2>
-          <h3><span>My</span> Skills</h3>
+        <h2><p>Em que sou bom</p></h2>
+          <h3><span>Minhas</span> Habilidades</h3>
       </div>
 
       <div class="skills-content">
@@ -217,7 +214,7 @@
 
           <div class="box">
               <div class="s-icons">
-                  <i class="bx bxs-bell-ring"></i>
+                  <i class="v-bell-ring"></i>
               </div>
               <h3>Server-Sent Events</h3>
           </div>
@@ -234,8 +231,8 @@
   </section>
   <section class="projects" id="projects">
       <div class="main-title">
-          <h2><p>What I am Good In</p></h2>
-          <h3><span>My</span> Projects</h3>
+          <h2><p>Em que sou bom</p></h2>
+          <h3><span>Meus</span> Projetos</h3>
       </div>
       <div class="projects-content">
           <div class="row">
@@ -245,7 +242,7 @@
             <div class="row">
                <img src="./Frontend/Image/projetos/checkout.png">
               <div class="layer">
-                <h5>ABS Innovation</h5>
+                <h5>Checkout - Ecommerce </h5>
                 <p>I currently work on this team as a Midlevel Java Backend Developer. Technologies that I use here: Java, Spring Boot/Cloud, Microservices, AWS, Docker, SQL and NoSQL databases.</p>
               </div>
             </div>
@@ -253,7 +250,7 @@
               <div class="row">
                  <img src="./Frontend/Image/projetos/payment.png">
                 <div class="layer">
-                  <h5>ABS Innovation</h5>
+                  <h5>Payment - Ecommerce</h5>
                   <p>I currently work on this team as a Midlevel Java Backend Developer. Technologies that I use here: Java, Spring Boot/Cloud, Microservices, AWS, Docker, SQL and NoSQL databases.</p>
                 </div>
               </div>
@@ -275,10 +272,10 @@
            </div>
            
            <div class="row">
-            <img src="./Frontend/Image//projetos/todojava.png">
+            <img src="./Frontend/Image/projetos/TO DO LIS.png">
            <div class="layer">
-             <h5>ABS Innovation</h5>
-             <p>I currently work on this team as a Midlevel Java Backend Developer. Technologies that I use here: Java, Spring Boot/Cloud, Microservices, AWS, Docker, SQL and NoSQL databases.</p>
+             <h5>To Do List</h5>
+             <p>Projeto to do list, construção apenas backend com o intuito de conhecer mais sobre API Restfull e banco H2</p>
            </div>
          </div>
          
@@ -301,8 +298,8 @@
   </section>
   <Section class="recommendation" id="recommendation ">
       <div class="main-title">
-         <h2> <p>What I am Good In</p></h2>
-          <h3><span>My</span> recommendation</h3>
+         <h2> <p>Em que sou bom</p></h2>
+          <h3><span>Minhas</span> Recomendações</h3>
       </div>  
       <div class="recommendation-content">
 
