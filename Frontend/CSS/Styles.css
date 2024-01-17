@@ -32,7 +32,7 @@ body{
 /*----------NAVBAR------------*/
 .Home{
   background: #080808;
-  height: 75vh;
+  height: 70vh;
   margin-bottom: 50px;
   
 
@@ -353,7 +353,6 @@ body{
   padding: 20px 20px;
   background:#b8d9d7;
   border-radius: 10px;
-  color: var(--text-color);
   width: 60vw;
   text-align: justify;
 
@@ -414,9 +413,10 @@ body{
   }
 }
 /*----------HOME------------*/
-.about .title-left{
+.about {
   height: fit-content;
 }
+
 
 /*--------ABOUT-------------*/
 
@@ -473,6 +473,7 @@ body{
 
 .about{
   height: fit-content;
+  
 }
 /*----------ABOUT------------*/
 
@@ -490,7 +491,7 @@ body{
     padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
     align-items: center;
   }
-  section {
+  .section {
     display: flex;
     flex-direction: column; /* Ou use grid, dependendo do layout desejado */
   }
@@ -532,10 +533,26 @@ body{
   .about-info,
   .about-me {
     margin-bottom: 15px;
-  }
 }
+  
 .projects{
   height: fit-content;
+}
+
+.carreira-content img{
+  display: none; /* Oculta a foto */
+}
+
+/*----------PROJECTS------------*/
+
+/*
+.container .text-box{
+  background: #9cdad6;
+  padding: 2rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+*/
 }
 /*----------about------------*/
 @media only screen and (max-width: 400px) {
