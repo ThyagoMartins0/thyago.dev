@@ -42,7 +42,7 @@ body{
   color: aliceblue;
   font-family: IBM Plex Mono;
   margin: 45px;
-  margin-top: 6.25rem;
+  
   text-align: center;
   align-self: Justify;
 }
@@ -197,29 +197,36 @@ body{
 }
 
 /*----------SKILLS------------*/
-.projects{
-  height: 150vh;
-  background-color: #b8d9d7;
-  overflow: hidden;
+.projects {
+  height: 150vh; /* Altura da seção */
+  background-color: #b8d9d7; /* Cor de fundo da seção */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura definida */
   padding: 20px; /* Adicione um preenchimento para garantir espaço entre o conteúdo e as bordas da seção */
-  font-family: IBM Plex Mono;
-  list-style: none;
- 
-  
+  font-family: 'IBM Plex Mono', monospace; /* Define a fonte do texto */
+  list-style: none; /* Remove os marcadores de lista padrão */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+}
+.layer h5 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 10px; /* Adiciona um espaço entre o título e o texto */
 }
 .projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 5rem;
-    padding: 5.625rem;
+    margin-top: 1.79rem;
+    
     margin-left: 20px;
     margin-right: 20px;
-   
+}
+.layer p {
+  color: white /* Muda a cor do texto para preto */
+}
+.check-01 h5{
+  color: white /* Muda a cor do texto para preto */
 
 }
-
 .projects-content .row{
   
   position: relative;
@@ -238,51 +245,36 @@ body{
   transition: transform 0.5s;
 }
 
+.row {
+  position: relative; /* Para que o position absolute dentro dela funcione corretamente */
+  overflow: hidden; /* Para evitar que o texto saia do contêiner quando expandir */
+}
 
-.projects-content .layer{
+.row img {
+  display: block;
   width: 100%;
-  height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), var(--main-color));
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Adicionando transição suave ao passar o mouse */
+}
+
+.layer {
   position: absolute;
-  border-radius: 10px;
+  top: 0;
   left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
-  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor do fundo cinza com transparência */
+  color: white; /* Cor do texto */
+  opacity: 0; /* Oculta o conteúdo por padrão */
+  transition: opacity 0.3s ease-in-out; /* Adiciona transição suave para a opacidade */
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Para que o padding não aumente o tamanho do elemento */
+  text-align: justify; /* Justifica o texto */
 }
 
-.layer h5{
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
+.row:hover .layer {
+  opacity: 1; /* Exibe o conteúdo quando o hover */
 }
-
-.layer p{
-  color: white;
-  line-height: 1.8;
-  text-decoration:none
-}
-
-.layer i{
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background: var(--text-color);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
 .projects-content .row:hover img{
   transform: scale(1.1);
 }

@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+  }
+  body{
+    background-color:  #080808;
+    
+  }
+  
+  /* -----------BODY-------------*/
+  .navbar{
+    text-align: center;
+    background: #1b1b1b;
+    font-family: IBM Plex Mono;
+  }
+  
+  .navbar .s-icons{
+    color: #9cdad6;
+    font-size: 1.5rem;
+    margin-right:3.125rem ;
+    
+  } 
+  
+  .navbar .sociais{
+    color: #9cdad6;
+    font-size: 1.5rem;
+  }
+
+ /*---------------------------------------------------------------*/
+ .video{
+    background-color:#9cdad6;
+    flex: 0 0 60%; /* Define a largura do vídeo (60% do espaço disponível) */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse 100% da largura do contêiner */
+ }
+ .container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .galeria{
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.galeria{
+    background-color:floralwhite;
+    flex: 0 0 60%; /* Define a largura do vídeo (60% do espaço disponível) */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse 100% da largura do contêiner */
+}
+
+
+.container .documento{
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.documento{
+    background-color:darkolivegreen
+   }
+
+
+
+
+
+
