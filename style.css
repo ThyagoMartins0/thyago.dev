@@ -265,6 +265,10 @@ body{
     font-size: 1.2rem;
     font-weight: 500;
 }
+.experience-item-stack{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 
 .experience-list{
     display: flex;
