@@ -1,12 +1,14 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import '../styles.css';
+// MyApp.js
+import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
-function MyApp({ Component, pageProps }) {
+function MyApp() {
   return (
-    <>
-      <SpeedInsights />
-      <Component {...pageProps} />
-    </>
+    <div>
+      <h1>Bem-vindo ao meu aplicativo</h1>
+      {/* Outros componentes ou conteúdo */}
+      <Analytics />
+    </div>
   );
 }
 
