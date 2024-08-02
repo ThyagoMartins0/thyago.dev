@@ -824,6 +824,10 @@
 </div>
 <!-- End Contacts -->
 
-<script src="script.js"></script>
+<script type="module">
+    import { Analytics } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.js';
+    Analytics();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>

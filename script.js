@@ -1,20 +1,24 @@
-function showSkill(skill) {
+(async () => {
+    const { Analytics } = await import('https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.js');
+    Analytics();
+  })();
+  
+  // Seu código existente aqui
+  function showSkill(skill) {
     const body = document.body
     const parameter = skill
     const boxContent = document.querySelector('.skill-modal')
-
+  
     let divContent
     let content
-
-    
+  
     if (boxContent.classList.contains('skill-modal-hidden')) {
-        body.classList.add("dark-background")
-        boxContent.classList.remove('skill-modal-hidden')
+      body.classList.add("dark-background")
+      boxContent.classList.remove('skill-modal-hidden')
     }
-
+  
     validateParameter()
     showContent()
-
     function validateParameter() {
         if (parameter == 'Java') {
             content = 'Java is a high-level, object-oriented and platform-independent programming language, very famous for its speed, security and scalability'
