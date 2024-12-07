@@ -1,0 +1,149 @@
+{
+  "home": {
+    "name": "Thyago Martins",
+    "profession": "Backend Developer"
+  },
+  "about": {
+    "title": "About",
+    "text": "It's a pleasure to see you here, my name is Thyago and I currently have a degree in computer engineering. I am a Backend Developer in PHP/Laravel and Java/Spring Boot, with experience in developing web systems. I have been working as a developer since 2022, I have always been very fond of technology and everything it can offer us. Currently, I work as a mid-level developer at Codernex. Already graduated as an engineer, I am now looking to improve myself in areas such as software architecture and technical leadership. Since the beginning of my career, I have participated in several national and international projects that had around 300 simultaneous users, acquiring knowledge in areas such as devops and cloud computing. Even so, I try to take a break in life and enjoy nature. My favorite hobby is swimming in the sea."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "services": {
+    "title": "Services",
+    "devops": {
+      "title": "Devops",
+      "text": "I have acquired knowledge in AWS, Docker configuration, VPS, Windows Server, and creating CI/CD for web applications."
+    },
+    "backend": {
+      "title": "Backend Developer",
+      "text": "As a backend developer, I focus my knowledge on best practices, security, and scalability, always looking for the best solution to the problem. Currently focusing my knowledge on Java with Spring framework, PHP and Laravel, Node and Express."
+    },
+    "architecture": {
+      "title": "Software Architecture",
+      "text": "As a software architect, I am gaining experience through my own projects, freelance work, and my current professional position."
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "mutant": {
+      "title": "Backend Developer",
+      "company": "Mutant",
+      "period": "July 2024 - Present",
+      "stack": "- - - - -",
+      "tasks": [
+        "- - - - - -",
+        "- - - - - -",
+        "- - - - - -"
+      ]
+    },
+    "codernex": {
+      "title": "Software Engineer",
+      "company": "Codernex",
+      "period": "October 2023 - August 2024",
+      "stack": "Java - Laravel - Junit - Vue - Docker",
+      "tasks": [
+        "At Codernex, as a backend developer, I create and implement projects with visualizations, APIs, and microservices. I build and maintain robust and scalable systems, ensuring the integrity and efficiency of backend operations.",
+        "I work closely with multidisciplinary teams to translate business requirements into solid and functional technical solutions. I am always looking for ways to optimize the performance and security of the systems I develop, keeping myself updated with the best practices and trends in the software development industry."
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "academic": {
+      "title": "Academic Education",
+      "items": [
+        {
+          "degree": "Bachelor in Computer Engineering",
+          "institution": "ESAMC",
+          "period": "2019 - 2024",
+          "description": "In this Bachelor's degree, I gained invaluable knowledge in the fields of administration, computing, team and project management."
+        },
+        {
+          "degree": "Software Architecture",
+          "institution": "University of Alberta",
+          "period": "2024 - 2024",
+          "description": "This course is training me."
+        },
+        {
+          "degree": "English Course",
+          "institution": "Evolutime",
+          "period": "2018 - 2022",
+          "description": "In this course, I gained in-depth knowledge of the English language, currently at level B2."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certification",
+      "items": [
+        {
+          "year": "2024",
+          "certificates": [
+            {
+              "title": "Complete Web Development Course 2021 Completion Certificate",
+              "link": "https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/"
+            },
+            {
+              "title": "Advanced Web Development with PHP, Laravel, and Vue.JS",
+              "link": "https://www.udemy.com/certificate/UC-6530e6f8-ce8b-4251-87f8-a98ce6b936f1/"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "certificates": [
+            {
+              "title": "Introduction to the Spring Boot Framework",
+              "link": "https://www.dio.me/certificate/F166DAEF/share"
+            },
+            {
+              "title": "Unit Testing with JUnit",
+              "link": "https://hermes.digitalinnovation.one/certificates/6428E7C2.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "items": [
+      {
+        "title": "To Do",
+        "github": "https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY",
+        "doc": "https://www.canva.com/design/DAGMFLRuGQM/9Dhpy4xIPj4ldeZvNa9QGQ/edit?utm_content=DAGMFLRuGQM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      },
+      {
+        "title": "Landing Page",
+        "github": "https://github.com/ThyagoMartins0/Biblioteca.io",
+        "doc": "https://www.canva.com/design/DAGMFupI5I8/tnMBx8aVcTwHbBdwgkYNqw/edit?utm_content=DAGMFupI5I8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "items": [
+      {
+        "type": "E-mail",
+        "info": "Oficialthyago2@gmail.com",
+        "link": "mailto:oficialthyago2@gmail.com"
+      },
+      {
+        "type": "Github",
+        "info": "ThyagoMartins0",
+        "link": "https://github.com/ThyagoMartins0"
+      },
+      {
+        "type": "Linkedin",
+        "info": "ThyagoMartins",
+        "link": "https://www.linkedin.com/in/thyagomartins/"
+      },
+      {
+        "type": "WhatsApp",
+        "info": "My contact",
+        "link": "https://wa.me/5513981923880?text=Hello%20Thyago,%20how%20are%20you?%0A%0AI%20found%20your%20number%20on%20your%20portfolio%20and%20would%20like%20to%20talk%20to%20you.%20Can%20we%20have%20a%20chat?"
+      }
+    ]
+  }
+}

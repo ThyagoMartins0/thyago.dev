@@ -1,0 +1,149 @@
+{
+  "home": {
+    "name": "Thyago Martins",
+    "profession": "Desenvolvedor Backend"
+  },
+  "about": {
+    "title": "Sobre",
+    "text": "É um prazer vê-lo aqui, meu nome é Thyago e atualmente sou formado em engenharia da computação. Sou desenvolvedor Backend em PHP/Laravel e Java/Spring Boot, com experiência no desenvolvimento de sistemas web. Trabalho como desenvolvedor desde 2022, sempre gostei muito de tecnologia e de tudo o que ela pode nos oferecer. Atualmente, trabalho como desenvolvedor pleno na empresa Codernex. Já formado como engenheiro, agora busco me aprimorar em áreas como arquitetura de software e liderança técnica. Desde o início da minha carreira, participei de vários projetos nacionais e internacionais que tinham cerca de 300 usuários simultâneos, adquirindo conhecimentos em áreas como devops e computação em nuvem. Mesmo assim, tento dar uma pausa na vida e aproveitar a natureza. Meu hobby favorito é nadar no mar."
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "services": {
+    "title": "Serviços",
+    "devops": {
+      "title": "Devops",
+      "text": "Adquiri conhecimento em AWS, configuração de Docker, VPS, Windows Serve e criação de CI/CD para aplicações web."
+    },
+    "backend": {
+      "title": "Dev back-end",
+      "text": "Como desenvolvedor backend, concentro meu conhecimento em boas práticas, segurança e escalabilidade, sempre buscando a melhor solução para o problema. Atualmente focando meu conhecimento nas linguagens Java com frame spring, Php e Laravel, Node e Express."
+    },
+    "architecture": {
+      "title": "Arquitetura de software",
+      "text": "Como arquiteto de software, estou adquirindo experiência por meio de projetos próprios, trabalhos freelancer e minha atual posição profissional."
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "mutant": {
+      "title": "Desenvolvedor backend",
+      "company": "Mutant",
+      "period": "Julho 2024 - Atualmente",
+      "stack": "- - - - -",
+      "tasks": [
+        "- - - - - -",
+        "- - - - - -",
+        "- - - - - -"
+      ]
+    },
+    "codernex": {
+      "title": "Engenheiro de Software",
+      "company": "Codernex",
+      "period": "Outubro 2023 - Agosto 2024",
+      "stack": "Java - Laravel - Junit - Vue  - Docker",
+      "tasks": [
+        "Na Codernex, como desenvolvedor back-end, crio e implemento projetos com visualizações, APIs e microsserviços. Construo e mantenho sistemas robustos e escaláveis, garantindo a integridade e eficiência das operações de bastidores das aplicações.",
+        "Trabalho em estreita colaboração com equipes multidisciplinares para traduzir requisitos de negócios em soluções técnicas sólidas e funcionais. Estou sempre em busca de formas de otimizar o desempenho e a segurança dos sistemas que desenvolvo, mantendo-me atualizado com as melhores práticas e tendências da indústria de desenvolvimento de software."
+      ]
+    }
+  },
+  "education": {
+    "title": "Educação",
+    "academic": {
+      "title": "Educação acadêmica",
+      "items": [
+        {
+          "degree": "Bacharel em Eng da Computação",
+          "institution": "ESAMC",
+          "period": "2019 - 2024",
+          "description": "Neste Bacharel obtive insdiscritiveis conhecimento no ramo da administração, computação, gerenciamento de equipe e projetos."
+        },
+        {
+          "degree": "Arquitetura de software",
+          "institution": "Universidade de Alberta",
+          "period": "2024 - 2024",
+          "description": "Este curso esta me capacitando."
+        },
+        {
+          "degree": "Curso de ingles",
+          "institution": "Evolutime",
+          "period": "2018 - 2022",
+          "description": "Neste curso obtive o conhecimento aprofundado na lingua inglêsa, sendo atualmente nivel B2."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificação",
+      "items": [
+        {
+          "year": "2024",
+          "certificates": [
+            {
+              "title": "Certificado de Conclusão do Curso Completo de Desenvolvimento Web 2021",
+              "link": "https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/"
+            },
+            {
+              "title": "Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS",
+              "link": "https://www.udemy.com/certificate/UC-6530e6f8-ce8b-4251-87f8-a98ce6b936f1/"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "certificates": [
+            {
+              "title": "Introdução ao framework Spring Boot",
+              "link": "https://www.dio.me/certificate/F166DAEF/share"
+            },
+            {
+              "title": "Testes Unitários com JUnit",
+              "link": "https://hermes.digitalinnovation.one/certificates/6428E7C2.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "items": [
+      {
+        "title": "To Do",
+        "github": "https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY",
+        "doc": "https://www.canva.com/design/DAGMFLRuGQM/9Dhpy4xIPj4ldeZvNa9QGQ/edit?utm_content=DAGMFLRuGQM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      },
+      {
+        "title": "Landing Page",
+        "github": "https://github.com/ThyagoMartins0/Biblioteca.io",
+        "doc": "https://www.canva.com/design/DAGMFupI5I8/tnMBx8aVcTwHbBdwgkYNqw/edit?utm_content=DAGMFupI5I8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contatos",
+    "items": [
+      {
+        "type": "E-mail",
+        "info": "Oficialthyago2@gmail.com",
+        "link": "mailto:oficialthyago2@gmail.com"
+      },
+      {
+        "type": "Github",
+        "info": "ThyagoMartins0",
+        "link": "https://github.com/ThyagoMartins0"
+      },
+      {
+        "type": "Linkedin",
+        "info": "ThyagoMartins",
+        "link": "https://www.linkedin.com/in/thyagomartins/"
+      },
+      {
+        "type": "WhatsApp",
+        "info": "Meu contato",
+        "link": "https://wa.me/5513981923880?text=Ol%C3%A1%20Thyago%2C%20tudo%20bem%3F%0A%0AEncontrei%20seu%20n%C3%BAmero%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA.%20Podemos%20bater%20um%20papo%3F"
+      }
+    ]
+  }
+}
