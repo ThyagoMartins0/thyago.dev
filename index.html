@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Thyago Martins</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <!-- Incluir CSS do Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <!-- Incluir JS do jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Incluir JS do Select2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+     <!-- Incluir CSS do Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+     <!-- Incluir JS do jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Incluir JS do Select2 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+ 
 </head>
 <body>
     <!-- Start Home -->
@@ -24,7 +26,7 @@
 
         <h1 class="home-name">Thyago Martins</h1>
 
-        <h2 class="home-profession">Backend Develop</h2>
+        <h2 class="home-profession">Desenvolvedor Backend</h2>
 
         <ul class="home-items">
             <li class="home-item">
@@ -53,25 +55,39 @@
         </ul>
     </section>
     <!-- End Home-->
+    <div class="language-selector">
+        <select id="language-select" style="width: 200px;">
+            <option value="pt" data-icon="fas fa-flag-usa">English</option>
+            <option value="en" data-icon="fas fa-flag-usa">Português</option>
+            <option value="es" data-icon="fas fa-flag-usa">Español</option>
+        </select>
+    </div>
 
     <div class="container">
         <!-- Start About -->
         <div class="about-container">
-            <h1 class="about-title">About</h1>
+            <h1 class="about-title">Sobre</h1>
 
-            <p class="about-text">
-                Nice to see you here, my name is Thyago and I currently have a degree in computer engineering, I am a PHP/Laravel and Java/Spring Boot Backend Developer, with experience in web systems development.
-                <br>
-                I have been working as a developer since 2022, I have always really enjoyed technology and everything it can offer us, I currently work as a full developer at the company Codernex, already trained as an engineer, I am now looking to improve myself in areas such as software architecture and technical leadership.
-                <br>
-                Since the beginning of my career I have participated in several national and international projects that had nearly 300 simultaneous users, gaining knowledge in areas such as devops and cloud computing, even so I try to take a break from life and enjoy nature. my favorite hobby is swimming in the sea
-            </p>
+            <div class="container">
+                <!-- Start About -->
+                <div class="about-container">
+                    <h1 class="about-title">Sobre</h1>
+        
+                    <p class="about-text">
+                        <span data-i18n="about.introduction"></span><br><br>
+                        <span data-i18n="about.experience"></span><br><br>
+                        <span data-i18n="about.projects"></span><br><br>
+                        <span data-i18n="about.hobby"></span>
+                    </p>
+                    
+                </div>
         </div>
         <!-- End About-->
 
         <!-- Start Skills -->
         <div class="skills-container">
-            <h1 class="skills-title">Skills</h1>
+            <h1 class="skills-title">Habilidades
+            </h1>
 
             <div class="skills-technologies">
                 <div class="skill-technology" onclick="showSkill('Java')">
@@ -212,7 +228,7 @@
     <!-- Inicio Services -->
     <section id="services" class="services-container">
         <div class="services-box">
-            <h1 class="services-title">Services</h1>
+            <h1 class="services-title">Serviços</h1>
 
             <div class="services-items">
                 <div class="service-item">
@@ -227,7 +243,8 @@
                     <h1 class="service-item-subtitle">Devops</h1>
 
                     <p class="service-item-text">
-                        I gain knowledge in AWS, Docker configuration, VPS, Windows Serve and creating CI/CD for web applications.
+                        
+Adquiri conhecimento em AWS, configuração de Docker, VPS, Windows Serve e criação de CI/CD para aplicações web.
                     </p>
                 </div>
 
@@ -247,12 +264,12 @@
                         </g>
                     </svg>
 
-                    <h1 class="service-item-subtitle">Backend Development</h1>
+                    <h1 class="service-item-subtitle">Dev back-end</h1>
 
                     <p class="service-item-text">
-                        As a backend developer, I focus my knowledge on best practices, 
-                                                security and scalability, always looking for the best solution to the problem. 
-                        Currently focusing my knowledge on Java languages ​​with frame spring, Php and Laravel, Node and Express
+                        Como desenvolvedor backend, concentro meu conhecimento em boas práticas, 
+                        segurança e escalabilidade, sempre buscando a melhor solução para o problema. 
+Atualmente focando meu conhecimento nas linguagens Java com frame spring, Php e Laravel, Node e Express
                     </p>
                 </div>
 
@@ -272,10 +289,10 @@
                         </g>
                     </svg>
 
-                    <h1 class="service-item-subtitle">Software architecture</h1>
+                    <h1 class="service-item-subtitle">Arquitetura de software</h1>
 
                     <p class="service-item-text">
-                        As a software architect, I am gaining experience through my own projects, freelance work and my current professional position.
+                        Como arquiteto de software, estou adquirindo experiência por meio de projetos próprios, trabalhos freelancer e minha atual posição profissional.
                     </p>
                 </div>
             </div>
@@ -285,13 +302,15 @@
 
     <!-- Start Experience -->
     <div class="experiences-container">
-        <h1 class="experiences-title">Experience</h1>
+        <h1 class="experiences-title">Experiencia</h1>
 
         <div class="experiences-items">
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">Backend developer</h2>
-                <h2 class="experience-item-company">Mutant</h2>
-                <h2 class="experience-item-period">July 2024 - Present</h2>
+                <h2 class="experience-item-subtitle">Desenvolvedor backend</h2>
+                <a target="_blank" href="https://mutant.com.br/" class="custom-link">
+                    <span class="experience-item-company">Mutant</span>
+                </a>
+                <h2 class="experience-item-period">Julho 2024 - Atualmente</h2>
                 <h2 class="experience-item-stack"> - - - - - </h2>
 
                 <ul class="experience-list">
@@ -302,73 +321,83 @@
             </div>
 
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">Software engineer</h2>
-                <h2 class="experience-item-company">Codernex </h2>
-                <h2 class="experience-item-period">Outubro 2023 - August 2024</h2>
+                <h2 class="experience-item-subtitle">Engenheiro de Software</h2>
+        
+                <a target="_blank" href="http://codernex.com/" class="custom-link">
+                    <span class="experience-item-company">Codernex</span>
+                </a>
+                <h2 class="experience-item-period">Outubro 2023 - Agosto 2024</h2>
                 <h2 class="experience-item-stack">Java - Laravel - Junit - Vue  - Docker</h2>
+
                 <ul class="experience-list">
-                    <li class="experience-list-item">At Codernex, as a back-end developer, I am responsible for creating and implementing a variety of projects using views, APIs and microservices. My role involves building and maintaining robust and scalable systems, ensuring the integrity and efficiency of the applications' behind-the-scenes operations.</li>
+                    <li class="experience-list-item">Na Codernex, como desenvolvedor back-end, crio e implemento projetos com visualizações, APIs e microsserviços. Construo e mantenho sistemas robustos e escaláveis, garantindo a integridade e eficiência das operações de bastidores das aplicações.</li>
                 
-                    <li class="experience-list-item">I work closely with multidisciplinary teams to translate business requirements into solid, functional technical solutions. I'm always looking for ways to optimize the performance and security of the systems I develop, keeping up to date with best practices and trends in the software development industry.</li>
+                    <li class="experience-list-item">Trabalho em estreita colaboração com equipes multidisciplinares para traduzir requisitos de negócios em soluções técnicas sólidas e funcionais. Estou sempre em busca de formas de otimizar o desempenho e a segurança dos sistemas que desenvolvo, mantendo-me atualizado com as melhores práticas e tendências da indústria de desenvolvimento de software.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">FullStack Developer</h2>
-                <h2 class="experience-item-company">99 Freela - UpWork</h2>
-                <h2 class="experience-item-period">September 2023 - March 2024</h2>
+                <h2 class="experience-item-subtitle">Desenvolvedor FullStack</h2>
+                
+                <a target="_blank" href="https://www.99freelas.com.br/?utm_source=google_ads&gad_source=1&gclid=CjwKCAjw5Ky1BhAgEiwA5jGujp88_ygZlknZrAidgUfFUdP4Yt1pV1qUp6OB3q17wUV6FWdsC97qfRoCJ_EQAvD_BwE" class="custom-link">
+                    <span class="experience-item-company">99 Freela - UpWork</span>
+                </a>
+                <h2 class="experience-item-period">Setembro 2023 - Março 2024</h2>
                 <h2 class="experience-item-stack">Java - Laravel - Node - SQL - PostgreSQL</h2>
-            
+
                 <ul class="experience-list">
-                    <li class="experience-list-item">I develop web applications using technologies such as Laravel, Spring Boot, Node.js, and tools like Docker, AWS, and Git, ranging from websites and E-commerce to management systems and Telegram bots.</li>
-                    <li class="experience-list-item">Faced and overcame the challenge of implementing a bot infrastructure in Python, resulting in 920 new users for a client by applying agile methodologies and good development practices.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <h2 class="experience-item-subtitle">Full stack development</h2>
-                <h2 class="experience-item-company">DevsFree </h2>
-                <h2 class="experience-item-period">September 2023 - March 2024</h2>
-                <h2 class="experience-item-stack">Java - Spring - PostgreSQL</h2>
-          
-                <ul class="experience-list">
-                    <li class="experience-list-item">Assisted in the design and development of client websites,
-                        ensuring they were visually appealing and functional.</li>
-                    <li class="experience-list-item">Utilized HTML, CSS, and JavaScript to create dynamic web pages.
+                    <li class="experience-list-item">Desenvolvo aplicações web utilizando tecnologias como Laravel, Spring Boot, Node.js, e ferramentas como Docker, AWS e Git, abrangendo desde websites e E-commerce até sistemas de gerenciamento e bots para Telegram.</li>
+                    <li class="experience-list-item">Enfrentei e superei o desafio de implementar uma infraestrutura de bots em Python, resultando em 920 novos usuários para um cliente, aplicando metodologias ágeis e boas práticas de desenvolvimento.
                     </li>
-                    <li class="experience-list-item">Participated in code reviews and team meetings to improve
-                        overall code quality and project outcomes.</li>
+                    
+            </div>
+            <div class="experience-item">
+                <h2 class="experience-item-subtitle">Desenvolvedor Java</h2>
+                
+                <a target="_blank" href="https://devsfree.com.br/" class="custom-link">
+                    <span class="experience-item-company">DevsFree</span>
+                </a>
+                <h2 class="experience-item-period">Setembro 2023 - Março 2024</h2>
+                <h2 class="experience-item-stack">Java - Spring - PostgreSQL</h2>
+
+                <ul class="experience-list">
+                    <li class="experience-list-item">Faço parte da equipe de desenvolvimento da ICPA - Igreja Cristã Projeto Ágape, onde reestruturei o código e defini padrões de design. No backend, utilizei Spring Boot e Java, contribuindo para a melhoria da arquitetura de software e eficiência das APIs.</li>
+                    <li class="experience-list-item">Participei ativamente de sessões de brainstorming e planejamento, colaborando com a equipe para implementar melhores práticas e soluções eficientes.
+                    </li>
+                    <li class="experience-list-item">Essas atividades fortaleceram minhas habilidades técnicas e meu conhecimento em desenvolvimento de software, especialmente em backend e arquitetura de sistemas.</li>
                 </ul>
             </div>
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">Support and infrastructure intern</h2>
-                <h2 class="experience-item-company">Gelog </h2>
-                <h2 class="experience-item-period">September 2023 - March 2024</h2>
+                <h2 class="experience-item-subtitle">Estágiario em redes e infraestrutura</h2>
+                
+                <a target="_blank" href="https://grupogelog.com.br/" class="custom-link">
+                    <span class="experience-item-company">Gelog</span>
+                </a>
+                <h2 class="experience-item-period">Setembro 2022 - Fev 2024</h2>
                 <h2 class="experience-item-stack">  Windows Server - Zabbix - Suporte ao usuário</h2>
 
-
                 <ul class="experience-list">
-                    <li class="experience-list-item">Assisted in the design and development of client websites,
-                        ensuring they were visually appealing and functional.</li>
-                    <li class="experience-list-item">Utilized HTML, CSS, and JavaScript to create dynamic web pages.
+                    <li class="experience-list-item">Durante meu estágio na Gelog, adquiri experiência em suporte e infraestrutura de redes em uma empresa de grande porte, aplicando normas de segurança como LGPD e OEA. Organizei e mapeei sistemas da matriz e filiais e melhorei a segurança de dados, utilizando sistemas como RODOPAR, BENNER e WINDOWS SERVER.</li>
+                    <li class="experience-list-item">Enfrentei desafios como a organização de sistemas e a segurança de dados, aprimorando minhas habilidades com um curso de Windows Server e desenvolvendo a gestão do tempo para acompanhar o ritmo da empresa.
                     </li>
-                    <li class="experience-list-item">Participated in code reviews and team meetings to improve
-                        overall code quality and project outcomes.</li>
+                    <li class="experience-list-item">Participei de projetos importantes, como o mapeamento de segurança e a implementação de novos sistemas de acesso a dados, buscando sempre soluções inovadoras para melhorar processos e simplificar o uso para os colaboradores.</li>
                 </ul>
             </div>
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">Support and infrastructure intern</h2>
-                <h2 class="experience-item-company">DevsFree </h2>
-                <h2 class="experience-item-period">September 2023 - March 2024</h2>
+                <h2 class="experience-item-subtitle">
+                    Estagiário de redes e infraestrutura </h2>
+                
+                <a target="_blank" href="https://www.camarasantos.sp.gov.br/onepage" class="custom-link">
+                    <span class="experience-item-company">Câmara Municipal de Santos </span>
+                </a>
+                <h2 class="experience-item-period">Outubro 2021 - Setembro 2022</h2>
                 <h2 class="experience-item-stack">  Windows Server - Suporte ao usuário</h2>
 
                 <ul class="experience-list">
-                    <li class="experience-list-item">Assisted in the design and development of client websites,
-                        ensuring they were visually appealing and functional.</li>
-                    <li class="experience-list-item">Utilized HTML, CSS, and JavaScript to create dynamic web pages.
+                    <li class="experience-list-item">Entre os desafios diários enfrentados na Câmara Municipal de Santos, destaco o aprendizado sobre as variadas responsabilidades da equipe de suporte ao usuário e da manutenção da infraestrutura de redes no local.</li>
+                    <li class="experience-list-item">Do ponto de vista técnico, aprofundei meus conhecimentos em manutenção de computadores, inclusive por meio de cursos específicos em suporte, redes e segurança da informação. Essa capacitação me permitiu desenvolver habilidades para resolver problemas e implementar soluções, otimizando as atividades diárias dos colegas.
                     </li>
-                    <li class="experience-list-item">Participated in code reviews and team meetings to improve
-                        overall code quality and project outcomes.</li>
+                    <li class="experience-list-item">Durante meu período na empresa, participei ativamente da equipe responsável pela substituição de equipamentos, envolvendo a troca de computadores e impressoras para aproximadamente 300 colaboradores, além da organização dos hacks de servidores da empresa.</li>
                 </ul>
             </div>
         </div>
@@ -377,21 +406,20 @@
     <!-- End Experience -->
         <!-- Start Experience voluntier -->
     <div class="experiences-container">
-        <h1 class="experiences-title">Volunteer experience
+        <h1 class="experiences-title">Experiência voluntária
         </h1>
 
         <div class="experiences-items">
             <div class="experience-item">
-                <h2 class="experience-item-subtitle">Java backend developer </h2>
-                <h2 class="experience-item-company">Câmara Municipal de Santos </h2>
-
-                <h2 class="experience-item-period">August - 2024 - Present</h2>
+                <h2 class="experience-item-subtitle">Desenvolvedor Backend Java</h2>
+                <h2 class="experience-item-company">DevsFree</h2>
+                <h2 class="experience-item-period">Agosto - 2024 - Presente </h2>
                 <h2 class="experience-item-stack">Java - Spring - PostgreSQL</h2>
-
-                <ul class="experience-list">
-                    <li class="experience-list-item">As a volunteer, I'm part of the development team responsible for ICPA - Igreja Cristã Projeto Ágape. Since I started working on the project, my biggest challenge has been to structure the design pattern and restructure all the code, which I have successfully done.</li>
-                    <li class="experience-list-item">In addition to my direct contribution to backend development for ICPA, I actively participated in brainstorming sessions and planning meetings with colleagues, seeking to improve the software architecture and the efficiency of the APIs developed. During this process, I was able to interact more with my teammates and understand best practices in Spring Boot and Java, immediately applying this knowledge to the project.</li>
-                    <li class="experience-list-item">These experiences not only allowed me to improve my technical skills, but also to develop leadership and problem-solving skills in challenging contexts, which I had never had contact with before.
+                
+                <ul class="lista de experiências">
+                    <li class="experience-list-item">Como voluntário, faço parte da equipe de desenvolvimento responsável pela ICPA - Igreja Cristã Projeto Ágape. Desde que comecei a trabalhar no projeto, meu maior desafio foi estruturar o padrão de design e reestruturar todo o código, o que fiz com sucesso.</li>
+                    <li class="experience-list-item">Além da minha contribuição direta no desenvolvimento backend do ICPA, participei ativamente de sessões de brainstorming e reuniões de planejamento com colegas, buscando melhorar a arquitetura de software e a eficiência das APIs desenvolvidas. Durante esse processo, pude interagir mais com meus colegas de equipe e entender as melhores práticas em Spring Boot e Java, aplicando imediatamente esse conhecimento ao projeto.</li>
+                    <li class="experience-list-item">Estas experiências permitiram-me não só melhorar as minhas competências técnicas, mas também desenvolver capacidades de liderança e de resolução de problemas em contextos desafiantes, com os quais nunca tinha tido contacto antes.
                     </li>
                 </ul>
             </div>
@@ -402,137 +430,137 @@
 
     <!-- Start Education  -->
     <div class="education-container">
-        <h1 class="education-title">Education</h1>
+        <h1 class="education-title">Educação</h1>
 
         <div class="education-items">
             <div class="education-academic">
-                <h2 class="education-academic-subtitle">Academic Education</h2>
+                <h2 class="education-academic-subtitle">Educação acadêmica</h2>
                 <a target="_blank" href="https://media.licdn.com/dms/image/D4D2DAQGhiZtigAa_0A/profile-treasury-image-shrink_1280_1280/0/1721945553252?e=1722646800&v=beta&t=wZNr8kqaWjZ6RZgQFf4eIuoRbgTsirYaQ69oOVS3fKo" class="custom-link">
-                    <li class="education-list-item">Bachelor of Computer engineering</li>
+                    <li class="education-list-item"> Bacharel em Eng da Computação</li>
                 </a>
-                <p class="education-academic-university">ESAMC</p>
+                <a target="_blank" href="https://www.esamc.br/" class="custom-link">
+                    <li class="education-list-item">ESAMC </li>
+                </a>  
+               
                 <p class="education-academic-period">2019 - 2024</p>
                 <ul class="education-list">
-                    <li class="education-list-item">
-                        In this Bachelor's degree, I obtained incredible knowledge in the field of administration, computing, team and project management.</li>
+                    <li class="education-list-item">Neste Bacharel obtive insdiscritiveis conhecimento no ramo da administração, computação, gerenciamento de equipe e projetos </li>
                 </ul>
             </div>
             <div class="education-academic">
-                <h2 class="education-academic-subtitle">Academic Education</h2>
+                <h2 class="education-academic-subtitle">Educação acadêmica</h2>
                 <a target="_blank" href="https://www.coursera.org/specializations/software-design-architecture" class="custom-link">
-                    <li class="education-list-item">Software architecture</li>
-                </a>          
+                    <li class="education-list-item">Arquitetura de software</li>
+                </a>           
                 <a target="_blank" href="https://www.ualberta.ca/index.html" class="custom-link">
-                    <li class="education-list-item">Alberta Univesity </li>
-                </a>               
-                 <p class="education-academic-period">2024 - 2024</p>
+                    <li class="education-list-item">Universidade de Alberta </li>
+                </a>    
+                
+                <p class="education-academic-period">2024 - 2024</p>
 
                 <ul class="education-list">
-                    <li class="education-list-item">Relevant Coursework: Web Development, User Interface Design, Data
-                        Structures, Algorithms, and Software Engineering.</li>
+                    <li class="education-list-item">
+                        Este curso esta me capacitando </li>
                 </ul>
             </div>
             <div class="education-academic">
-                <h2 class="education-academic-subtitle">Academic Education</h2>
+                <h2 class="education-academic-subtitle">Educação acadêmica</h2>
                 <a target="_blank" href="https://media.licdn.com/dms/image/D4D2DAQGST2Bz45ZoVA/profile-treasury-image-shrink_800_800/0/1721945988136?e=1722625200&v=beta&t=Ld-0ao614nNGr1DE4kLuW0sdvClkUwMIk3IzrT2j5rU" class="custom-link">
-                    <li class="education-list-item">English Course</li>
+                    <li class="education-list-item">Curso de ingles</li>
                 </a>
         
-                <p class="education-academic-university">Evolutime</p>
+                <a target="_blank" href="https://www.evolutime.net/" class="custom-link">
+                    <li class="education-list-item">Evolutime </li>
+                </a>    
+                
                 <p class="education-academic-period">2018 - 2022</p>
 
                 <ul class="education-list">
-                    <li class="education-list-item">Relevant Coursework: Web Development, User Interface Design, Data
-                        Structures, Algorithms, and Software Engineering.</li>
+                    <li class="education-list-item">Neste curso obtive o conhecimento aprofundado na lingua inglêsa,
+                        sendo atualmente nivel B2
+                    </li>
                 </ul>
             </div>
 
             <div class="education-certifications">
-                <h2 class="education-certifications-subtitle">Certification - 2024</h2>
-
+                <h2 class="education-certifications-subtitle">Certificação - 2024</h2>
                 <ul class="education-list">
-                  <a target="_blank" href="https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/" class="custom-link">
-                        <li class="education-list-item">Certificate of Completion of the Complete Web Development Course 2021</li>
+                    <a target="_blank" href="https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/" class="custom-link">
+                        <li class="education-list-item">Certificado de Conclusão do Curso Completo de Desenvolvimento Web 2021</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://www.udemy.com/certificate/UC-6530e6f8-ce8b-4251-87f8-a98ce6b936f1/" class="custom-link">
-                        <li class="education-list-item">Advanced Web Development with PHP, Laravel and Vue.JS</li>
+                        <li class="education-list-item">Desenvolvimento Web Avançado com PHP, Laravel e Vue.JS</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://www.udemy.com/certificate/UC-4ec53703-cc85-4428-a66a-f72ae0a5fb9f/" class="custom-link">
-                        <li class="education-list-item">PHP 7 Complete - Web Developer Course + Projects</li>
+                        <li class="education-list-item">PHP 7 Completo - Curso de Desenvolvedor Web + Projetos</li>
                     </a>
                     <a>------------</a>
-                     <a target="_blank" href="https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/" class="custom-link">
-                        <li class="education-list-item">Java FROM ZERO 2023 Object-Oriented Programming +Projects</li>
+                    <a target="_blank" href="https://www.udemy.com/certificate/UC-fd5c8ec8-70f0-4de3-9abd-973f355e103e/" class="custom-link">
+                        <li class="education-list-item">Java DO ZERO 2023 Programação Orientada a Objetos +Projetos</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://www.udemy.com/certificate/UC-1aac3618-0aef-45df-bcf4-7445212b503a/" class="custom-link">
-                        <li class="education-list-item">Linux Bootcamp: Rapid Learning Path [Devs and DevOps]</li>
+                        <li class="education-list-item">Linux Bootcamp: Caminho Rápido de Aprendizado [Devs e DevOps]</li>
                     </a>
                 </ul>
-                
             </div>
             <div class="education-certifications">
-                <h2 class="education-certifications-subtitle">Certification - 2023</h2>
-
+                <h2 class="education-certifications-subtitle">Certificação - 2023</h2>
                 <ul class="education-list">
                     <a target="_blank" href="https://www.dio.me/certificate/F166DAEF/share" class="custom-link">
-                        <li class="education-list-item">Introduction to the Spring Boot framework</li>
+                        <li class="education-list-item">Introdução ao framework Spring Boot</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://hermes.digitalinnovation.one/certificates/6428E7C2.pdf" class="custom-link">
-                        <li class="education-list-item">Unit Testing With JUnit</li>
+                        <li class="education-list-item">Testes Unitários com JUnit</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://hermes.digitalinnovation.one/certificates/8B87F043.pdf" class="custom-link">
-                        <li class="education-list-item">Learn about S.O.L.I.D. with Java</li>
+                        <li class="education-list-item">Aprenda sobre S.O.L.I.D. com Java</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://hermes.digitalinnovation.one/certificates/9AAF856D.pdf" class="custom-link">
-                        <li class="education-list-item">Programming Oriented Objects with Java</li>
+                        <li class="education-list-item">Programação Orientada a Objetos com Java</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://www.credly.com/badges/4e8d2f79-23ac-4676-b32a-1e5bfe45eef1/public_url" class="custom-link">
-                        <li class="education-list-item">DevOps Essentials</li>
+                        <li class="education-list-item">Essenciais de DevOps</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://www.udemy.com/certificate/UC-f8dda6d5-d8f2-47aa-a9d8-6c84fa22f4ee/" class="custom-link">
-                        <li class="education-list-item">Mastering Zabbix from basics to advanced</li>
+                        <li class="education-list-item">Dominando Zabbix do básico ao avançado</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://hermes.digitalinnovation.one/certificates/69025B77.pdf" class="custom-link">
-                        <li class="education-list-item">Working in Agile Teams</li>
+                        <li class="education-list-item">Trabalhando em Times Ágeis</li>
                     </a>
                 </ul>
-                
             </div>
             <div class="education-certifications">
-                <h2 class="education-certifications-subtitle">Certification - 2022</h2>
-
+                <h2 class="education-certifications-subtitle">Certificação - 2022</h2>
                 <ul class="education-list">
                     <a target="_blank" href="https://www.udemy.com/certificate/UC-d20005e1-c595-4842-9883-bf7536eb614c/" class="custom-link">
-                        <li class="education-list-item">Network Architecture
-                        </li>
+                        <li class="education-list-item">Arquitetura de Redes</li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://hermes.digitalinnovation.one/certificates/6428E7C2.pdf" class="custom-link">
-                        <li class="education-list-item">The Bits and Bytes of Computer Networking</li>
+                        <li class="education-list-item">Os Bits e Bytes do Networking de Computadores</li>
                     </a>
-                   
                 </ul>
-                
             </div>
+            
             <div class="education-certifications">
                 <h2 class="education-certifications-subtitle">Certification - 2021</h2>
 
                 <ul class="education-list">
                     <a target="_blank" href="https://www.credly.com/badges/d390acc9-ae3c-45a3-8a9c-1c5ca8cced72?source=linked_in_profile" class="custom-link">
-                        <li class="education-list-item">CCNA: Introduction to Networks</li>
+                        <li class="education-list-item">CCNA: Introdução às Redes </li>
                     </a>
                     <a>------------</a>
                     <a target="_blank" href="https://certify.one/users/b393f140-c7e9-11eb-9cdd-333faef7eba5/credential/b399de70-c7e9-11eb-be08-714829c28145" class="custom-link">
-                        <li class="education-list-item">FiberSkills Fiber Optic Technician</li>
+                        <li class="education-list-item"> Técnico de fibra óptica FiberSkills</li>
                     </a>
                    
                 </ul>
@@ -550,235 +578,112 @@
                 <img class="portfolio-item-image" src="img/portfolio/to-do.png" alt="To Do">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/API_PAGAMENTO_PICPAY">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFLRuGQM/9Dhpy4xIPj4ldeZvNa9QGQ/edit?utm_content=DAGMFLRuGQM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFLRuGQM/9Dhpy4xIPj4ldeZvNa9QGQ/edit?utm_content=DAGMFLRuGQM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/landing-page.png" alt="Landing Page">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Biblioteca.io">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFupI5I8/tnMBx8aVcTwHbBdwgkYNqw/edit?utm_content=DAGMFupI5I8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFupI5I8/tnMBx8aVcTwHbBdwgkYNqw/edit?utm_content=DAGMFupI5I8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/weather-app.png" alt="Weather App">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Notific.ou">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFi9eVjg/xuMK8TcdTml2H3CRB8LtCQ/edit?utm_content=DAGMFi9eVjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFi9eVjg/xuMK8TcdTml2H3CRB8LtCQ/edit?utm_content=DAGMFi9eVjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/cursaki.png" alt="Weather App">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Cursaki">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMF75Nq2w/wr5eZ66SERFfIshWFqALzQ/edit?utm_content=DAGMF75Nq2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMF75Nq2w/wr5eZ66SERFfIshWFqALzQ/edit?utm_content=DAGMF75Nq2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/weather-app.png" alt="Weather App">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Notific.ou">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFi9eVjg/xuMK8TcdTml2H3CRB8LtCQ/edit?utm_content=DAGMFi9eVjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMFi9eVjg/xuMK8TcdTml2H3CRB8LtCQ/edit?utm_content=DAGMFi9eVjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/e_box.png" alt="Dashboard">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/E-box">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGI1ZapLcQ/3EyQCqlKehPkL99FX1q-Dw/edit?utm_content=DAGI1ZapLcQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGI1ZapLcQ/3EyQCqlKehPkL99FX1q-Dw/edit?utm_content=DAGI1ZapLcQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/cleanwithspring.png" alt="Login System">
                 <div class="portfolio-items-links">
                     <a target="_blank" class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Clean-Architecture-com-Spring">Github</a>
-                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMGPJYy_o/tyJgya4qoQXYDLxip_0c1g/edit?utm_content=DAGMGPJYy_o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a target="_blank" class="portfolio-item-link" href="https://www.canva.com/design/DAGMGPJYy_o/tyJgya4qoQXYDLxip_0c1g/edit?utm_content=DAGMGPJYy_o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/Reserva.png" alt="Quiz">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Reserva.aki">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGBjfWKA/LgOxjFNt-LyltiE5opDYVw/edit?utm_content=DAGMGBjfWKA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGBjfWKA/LgOxjFNt-LyltiE5opDYVw/edit?utm_content=DAGMGBjfWKA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/reconheceme.png" alt="Quiz">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/reconhece.me">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGI-B-UU/NBwaWC183xfoXMCHQ8wwbQ/edit?utm_content=DAGMGI-B-UU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGI-B-UU/NBwaWC183xfoXMCHQ8wwbQ/edit?utm_content=DAGMGI-B-UU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/tempo-hoje.png" alt="Quiz">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/tempo-hoje">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGLnNvpU/c2kbFBPBFQyQbD0YsJ-h-A/edit?utm_content=DAGMGLnNvpU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech document</a>
-                </div>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGLnNvpU/c2kbFBPBFQyQbD0YsJ-h-A/edit?utm_content=DAGMGLnNvpU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica                </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/tiket.png" alt="Quiz">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/tiket.aqui">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGH0gO6M/ea6sxmBnFTbMqdUR3ho4mg/edit?utm_content=DAGMGH0gO6M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGH0gO6M/ea6sxmBnFTbMqdUR3ho4mg/edit?utm_content=DAGMGH0gO6M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/Doame.png" alt="Doame">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Doame">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGc71d5Q/ByRxMVHijy3GEt4w1gQO9g/edit?utm_content=DAGMGc71d5Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGc71d5Q/ByRxMVHijy3GEt4w1gQO9g/edit?utm_content=DAGMGc71d5Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/Health.ME.png" alt="Health">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/Health.ME">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGXK4kRQ/3thuX4rtJXmQNNpM2iLG_A/edit?utm_content=DAGMGXK4kRQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGXK4kRQ/3thuX4rtJXmQNNpM2iLG_A/edit?utm_content=DAGMGXK4kRQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/audio.png" alt="audio">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/audio.list">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGTcFGso/5wV1fEVc8UXfPGDNM4gDRg/edit?utm_content=DAGMGTcFGso&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGTcFGso/5wV1fEVc8UXfPGDNM4gDRg/edit?utm_content=DAGMGTcFGso&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/atende.png" alt="Quiz">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/atende.me">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGd-Syug/CmO8QF4KoGHkXsBJM2wd9Q/edit?utm_content=DAGMGd-Syug&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGd-Syug/CmO8QF4KoGHkXsBJM2wd9Q/edit?utm_content=DAGMGd-Syug&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/dash.png" alt="dash">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/dash.io">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGQtT3Pk/iwDrNI4BW34qT-gyCedn6A/edit?utm_content=DAGMGQtT3Pk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGQtT3Pk/iwDrNI4BW34qT-gyCedn6A/edit?utm_content=DAGMGQtT3Pk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
             <div class="portfolio-item">
                 <img class="portfolio-item-image" src="img/portfolio/pagar.png" alt="pagar">
                 <div class="portfolio-items-links">
                     <a class="portfolio-item-link" href="https://github.com/ThyagoMartins0/pagar.me">Github</a>
-                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGaJ1DhM/vIQ3i3MSlOjWJoYjObvaEg/edit?utm_content=DAGMGaJ1DhM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Tech documento</a>
+                    <a class="portfolio-item-link" href="https://www.canva.com/design/DAGMGaJ1DhM/vIQ3i3MSlOjWJoYjObvaEg/edit?utm_content=DAGMGaJ1DhM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Doc técnica
                 </div>
             </div>
-            <!-- Portfolio items here 
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img class="portfolio-item-image" src="img/portfolio/quiz.png" alt="Quiz">
-                <div class="portfolio-items-links">
-                    <a class="portfolio-item-link" href="#">Github</a>
-                    <a class="portfolio-item-link" href="#">Live Demo</a>
-                </div>
-            </div>
-            -->
+            
         </div>
         <div class="portfolio-pagination" id="portfolio-pagination"></div>
     </div>
@@ -787,7 +692,7 @@
 
     <!-- Start Contacts -->
     <div class="contacts-container">
-        <h1 class="contacts-title">Contacts</h1>
+        <h1 class="contacts-title">Contatos</h1>
 
         <div class="contacts-items">
             <a class="contact-item" href="oficialthyago2@gmail.com" target="_blank">
@@ -806,28 +711,17 @@
             </a>
             <a class="contact-item" href="https://wa.me/5513981923880?text=Ol%C3%A1%20Thyago%2C%20tudo%20bem%3F%0A%0AEncontrei%20seu%20n%C3%BAmero%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA.%20Podemos%20bater%20um%20papo%3F" target="_blank">
                 <img class="contact-item-img" src="img/contacts/whatsapp.svg" alt="Linkedin">
-                <p class="contact-item-info">My contact </p>
+                <p class="contact-item-info"> Meu contato</p>
             </a>
 
         </div>
     </div>
 
-</div>
-<div class="language-selector">
-    <select id="language-select" style="width: 200px;">
-        <option value="index.html" data-icon="fas fa-flag-usa">English</option>
-        <option value="index_ptbr.html" data-icon="fas fa-flag-usa">Português</option>
-        <option value="index_es.html" data-icon="fas fa-flag-usa">Español</option>
-    </select>
-</div>
+
 
 </div>
 <!-- End Contacts -->
 
-<script type="module">
-    import { Analytics } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.js';
-    Analytics();
-  </script>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
